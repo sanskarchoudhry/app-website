@@ -4,12 +4,61 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #021526;
+  --foreground: #2e073f;
+}
+
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("/fonts/Satoshi-Regular.ttf");
+}
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("/fonts/Satoshi-Variable.ttf");
+}
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("/fonts/Satoshi-VariableItalic.ttf");
+}
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("/fonts/Satoshi-Medium.ttf");
+}
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("/fonts/Satoshi-MediumItalic.ttf");
+}
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("/fonts/Satoshi-Light.ttf");
+}
+@font-face {
+  font-family: "Satoshi-LightItalic";
+  src: url("/fonts/Satoshi-LightItalic.ttf");
+}
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("/fonts/Satoshi-Bold.ttf");
+}
+@font-face {
+  font-family: "Satoshi-BoldItalic";
+  src: url("/fonts/Satoshi-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("/fonts/Satoshi-Italic.ttf");
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("/fonts/Satoshi-Black.ttf");
+}
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("/fonts/Satoshi-BlackItalic.ttf");
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #021526;
+    --background: #2e073f;
     --foreground: #ededed;
   }
 }

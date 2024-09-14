@@ -10,7 +10,7 @@ export default function Home() {
             {menuItems.map(({ menuLink, menuTitle }, index) => {
               return (
                 <Link key={index} href={menuLink}>
-                  <li className=" hover:text-light-blue-primary">
+                  <li className=" hover:text-pink-primary font-satoshi-bold">
                     {menuTitle}
                   </li>
                 </Link>
@@ -19,8 +19,21 @@ export default function Home() {
           </ul>
         </nav>
       </header>
-      <section className="max-w-[90rem] min-w-[75rem] bg-[#697565] bg-opacity-10 rounded-[40px] h-96 flex">
-        <section className="w-3/5"></section>
+      <section className="max-w-[90rem] min-w-[75rem] bg-[#697565] bg-opacity-10 rounded-[40px] flex">
+        <section className="w-3/5 flex flex-col">
+          <div>
+            <h1 className=" text-5xl font-satoshi-black">LOGO</h1>
+          </div>
+
+          <form action="">
+            <input
+              type="text"
+              value="searchBar"
+              name="searchBar"
+              className="h-12 rounded-xl"
+            />
+          </form>
+        </section>
         <section className="relative">
           <div className="h-full w-full relative rounded-r-[40px]">
             <Image

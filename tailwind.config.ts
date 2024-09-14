@@ -8,10 +8,18 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      "bg-primary": "#021526",
+      "bg-primary": "#2E073F",
       "bg-secondary": "#6439FF",
-      "pink-primary": "#C7253E",
+      "pink-primary": "#EB3678",
       "light-blue-primary": "#41B3A2",
+    },
+    fontFamily: {
+      "satoshi-regular": "Satoshi-Regular",
+      "satoshi-black": "Satoshi-Black",
+      "satoshi-bold": "Satoshi-Bold",
+      "satoshi-italic": "Satoshi-Italic",
+      "satoshi-medium": "Satoshi-Medium",
+      "satoshi-light": "Satoshi-Light",
     },
     extend: {
       colors: {
