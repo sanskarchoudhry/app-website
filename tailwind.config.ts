@@ -1,24 +1,28 @@
 import type { Config } from "tailwindcss";
+import { PluginAPI } from "tailwindcss/types/config";
 
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     colors: {
-      "bg-primary": "#021526",
-      "bg-secondary": "#6439FF",
+      "bg-primary": "#07090e",
+      "bg-secondary": "#021526",
       "pink-primary": "#EB3678",
       "light-blue-primary": "#41B3A2",
-      "black-primary": "#000000",
+      "black-primary": "#322C2B",
       "yellow-primary": "#F9E400",
       "purple-primary": "#AF47D2",
       "button-primary-blue": "#5C2FC2",
       "button-secondary-blue": "#240750",
       "grey-primary": "#3C3D37",
-      "gewy-secondary": "#697565",
+      "grey-secondary": "#697565",
+      "white-primary": "#ededed",
+      "white-secondary": "#E9EFEC",
     },
     fontSize: {
       12: "0.75rem",
@@ -57,6 +61,18 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }: PluginAPI) {
+      addComponents({
+        ".truncate-multiline": {
+          overflow: "hidden",
+          textOverflow: "ellipsis",
+          display: "-webkit-box",
+          WebkitLineClamp: "3", // Change this number for 2 or 3 lines
+          WebkitBoxOrient: "vertical",
+        },
+      });
+    },
+  ],
 };
 export default config;
