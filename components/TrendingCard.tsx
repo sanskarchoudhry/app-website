@@ -3,31 +3,37 @@ import { postsData } from "../public/json_data";
 
 export default function TrendingCard(postData: postsData) {
   return (
-    <div className=" bg-grey-secondary bg-opacity-30 rounded-md">
-      <div className="w-full">
-        <div className="">
-          {postData.tag} {postData.time}
+    <div className=" bg-grey-secondary bg-opacity-10 rounded-md p-4 gap-8 flex flex-col">
+      <div className="flex justify-between">
+        <div className="flex gap-8">
+          {postData.tag}{" "}
+          <span className="text-grey-secondary">{postData.time}</span>
         </div>
-        <div className=" flex">
+        <div className=" flex gap-4">
           <Image
             src={"/icons/comment.svg"}
             alt="comment-icon"
-            height={10}
-            width={10}
+            height={20}
+            width={20}
           />
           {postData.comments}
         </div>
       </div>
-      <div>
-        <h3>{postData.postTopic}</h3>
-        <p className=" h-18 truncate-multiline">{postData.text}</p>
+      <div className="gap-4 flex flex-col">
+        <h3 className=" font-satoshi-bold text-white-primary">
+          {postData.postTopic}
+        </h3>
+        <p className=" h-18 truncate-multiline text-white-secondary">
+          {postData.text}
+        </p>
       </div>
-      <div>
+      <div className="flex gap-12 items-center">
         <Image
           src={postData.imagePath}
           alt="profile-image"
-          height={20}
-          width={20}
+          height={50}
+          width={50}
+          className="rounded-[50%] w-[40px] h-[40px]"
         />
         {postData.username}
       </div>

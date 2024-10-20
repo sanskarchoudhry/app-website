@@ -7,6 +7,28 @@
   --foreground: #2e073f;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: transparent; */
+  visibility: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #414040;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2e2d2d;
+}
+
 @font-face {
   font-family: "Satoshi-Regular";
   src: url("/fonts/Satoshi-Regular.ttf");

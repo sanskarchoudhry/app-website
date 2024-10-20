@@ -54,7 +54,7 @@ export default function Page() {
             })}
           </div>
         </section>
-        <section className=" w-1/3 ">
+        <section className=" w-1/3 flex flex-col gap-24">
           <h1 className=" text-32 font-satoshi-bold">Trending Posts</h1>
           <div className=" flex flex-col gap-16 h-[30rem] overflow-y-scroll px-2">
             {postsData.slice(0, 4).map((postData, index) => {
