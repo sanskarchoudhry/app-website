@@ -21,7 +21,7 @@ function MovieSlider() {
   return (
     <section className=" flex w-[70vw] overflow-hidden relative">
       <div
-        className={`flex gap-[4rem] py-8 min-w-[187.5rem] translate-x-[${sliderTranslateX}rem]`}
+        className={`flex gap-[4rem] py-8 min-w-[187.5rem] transition-transform duration-300 translate-x-[${sliderTranslateX}rem]`}
       >
         {trendingMoviesData.map(
           (movieData: trendingMoviesData, index: number) => {

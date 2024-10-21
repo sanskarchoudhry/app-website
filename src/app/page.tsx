@@ -76,7 +76,10 @@ export default function Page() {
           </div>
         </section>
       </section>
-      <MovieSlider />
+      <section className=" flex flex-col gap-8 w-[70vw] overflow-hidden relative mt-14">
+        <h1 className="text-32 font-satoshi-bold">Most Liked</h1>
+        <MovieSlider />
+      </section>
       <Footer />
     </main>
   );
