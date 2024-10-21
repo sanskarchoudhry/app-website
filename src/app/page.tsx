@@ -4,11 +4,13 @@ import TrendingCard from "../../components/TrendingCard";
 import { postsData, website_info_data } from "../../public/json_data";
 import Footer from "../../components/Footer";
 import MovieSlider from "../../components/MovieSlider";
+import Navbar from "../../components/Navbar";
 // import SearchBox from "../../public/components/SearchBox";
 
 export default function Page() {
   return (
     <main className="flex flex-col overflow-x-hidden items-center justify-center">
+      <Navbar />
       <section className="relative flex h-screen w-screen">
         <Image
           height={911}
