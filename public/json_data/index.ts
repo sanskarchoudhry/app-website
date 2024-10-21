@@ -3,6 +3,14 @@ export interface websiteInfoData {
   text: string;
 }
 
+export interface trendingMoviesData {
+  title: string;
+  imagePath: string;
+  description?: string;
+  genre?: string;
+  rank: number;
+}
+
 export interface MenuItems {
   menuTitle: string;
   menuLink: string;
@@ -130,5 +138,58 @@ export const postsData: postsData[] = [
     username: "david56",
     imagePath: "/test.jpg",
     comments: 101,
+  },
+];
+
+export const trendingMoviesData: trendingMoviesData[] = [
+  {
+    title: "Title 1",
+    imagePath: "/test2.jpg",
+    rank: 1,
+  },
+  {
+    title: "Title 2",
+    imagePath: "/test2.jpg",
+    rank: 2,
+  },
+  {
+    title: "Title 3",
+    imagePath: "/test2.jpg",
+    rank: 3,
+  },
+  {
+    title: "Title 4",
+    imagePath: "/test2.jpg",
+    rank: 4,
+  },
+  {
+    title: "Title 5",
+    imagePath: "/test2.jpg",
+    rank: 5,
+  },
+  {
+    title: "Title 6",
+    imagePath: "/test2.jpg",
+    rank: 6,
+  },
+  {
+    title: "Title 7",
+    imagePath: "/test2.jpg",
+    rank: 7,
+  },
+  {
+    title: "Title 8",
+    imagePath: "/test2.jpg",
+    rank: 8,
+  },
+  {
+    title: "Title 9",
+    imagePath: "/test2.jpg",
+    rank: 9,
+  },
+  {
+    title: "Title 10",
+    imagePath: "/test2.jpg",
+    rank: 10,
   },
 ];
