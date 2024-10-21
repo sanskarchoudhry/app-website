@@ -3,7 +3,7 @@ import { postsData } from "../public/json_data";
 
 export default function TrendingCard(postData: postsData) {
   return (
-    <div className=" bg-grey-secondary bg-opacity-10 rounded-md p-4 gap-8 flex flex-col">
+    <div className=" bg-grey-secondary bg-opacity-10 rounded-md p-4 gap-8 flex flex-col cursor-pointer">
       <div className="flex justify-between">
         <div className="flex gap-8">
           {postData.tag}{" "}

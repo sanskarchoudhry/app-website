@@ -2,6 +2,8 @@
 import Image from "next/image";
 import TrendingCard from "../../components/TrendingCard";
 import { postsData, website_info_data } from "../../public/json_data";
+import Footer from "../../components/Footer";
+import MovieSlider from "../../components/MovieSlider";
 // import SearchBox from "../../public/components/SearchBox";
 
 export default function Page() {
@@ -74,6 +76,11 @@ export default function Page() {
           </div>
         </section>
       </section>
+      <section className=" flex flex-col gap-8 w-[70vw] overflow-hidden relative mt-14">
+        <h1 className="text-32 font-satoshi-bold">Most Liked</h1>
+        <MovieSlider />
+      </section>
+      <Footer />
     </main>
   );
 }

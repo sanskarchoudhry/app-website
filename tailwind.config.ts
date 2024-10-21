@@ -14,7 +14,7 @@ const config: Config = {
       "bg-secondary": "#021526",
       "pink-primary": "#EB3678",
       "light-blue-primary": "#41B3A2",
-      "black-primary": "#322C2B",
+      "black-primary": "#0C0C0C",
       "yellow-primary": "#F9E400",
       "purple-primary": "#AF47D2",
       "button-primary-blue": "#5C2FC2",
