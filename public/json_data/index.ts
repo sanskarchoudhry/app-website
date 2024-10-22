@@ -1,9 +1,9 @@
-export interface websiteInfoData {
+export interface WebsiteInfoData {
   heading: string;
   text: string;
 }
 
-export interface trendingMoviesData {
+export interface TrendingMoviesData {
   title: string;
   imagePath: string;
   description?: string;
@@ -15,8 +15,12 @@ export interface MenuItems {
   menuTitle: string;
   menuLink: string;
 }
+export interface NavMenuItems {
+  menuTitle: string;
+  menuLink: string;
+}
 
-export interface postsData {
+export interface PostsData {
   tag: string;
   time: string;
   postTopic: string;
@@ -28,7 +32,7 @@ export interface postsData {
   dislikes?: string;
 }
 
-export const website_info_data: websiteInfoData[] = [
+export const website_info_data: WebsiteInfoData[] = [
   {
     heading: "Heading 1",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat maxime recusandae doloribus esse ratione at, nemo distinctio aut laborum fugit itaque repudiandae aspernatur magnam praesentium commodi velit, sunt, atque autem animi dolorem. Ipsa a iusto voluptatum, voluptate, pariatur excepturi nesciunt provident, sunt voluptatem repellat architecto velit esse molestias suscipit dolor.",
@@ -73,9 +77,13 @@ export const menuItems: MenuItems[] = [
     menuTitle: "Top airing",
     menuLink: "/top-airing",
   },
+  {
+    menuTitle: "Community",
+    menuLink: "/community/posts",
+  },
 ];
 
-export const postsData: postsData[] = [
+export const postsData: PostsData[] = [
   {
     tag: "#general",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat maxime recusandae doloribus esse ratione at, nemo distinctio aut laborum fugit itaque repudiandae aspernatur magnam praesentium commodi velit, sunt, atque autem animi dolorem. Ipsa a iusto voluptatum, voluptate, pariatur excepturi nesciunt provident, sunt voluptatem repellat architecto velit esse molestias suscipit dolor.",
@@ -141,7 +149,7 @@ export const postsData: postsData[] = [
   },
 ];
 
-export const trendingMoviesData: trendingMoviesData[] = [
+export const trendingMoviesData: TrendingMoviesData[] = [
   {
     title: "Title 1",
     imagePath: "/test2.jpg",

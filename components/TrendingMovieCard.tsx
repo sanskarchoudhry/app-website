@@ -1,14 +1,14 @@
 import Image from "next/image";
-import { trendingMoviesData } from "../public/json_data";
+import { TrendingMoviesData } from "../public/json_data";
 
-export default function TrendingMovieCard(data: trendingMoviesData) {
+export default function TrendingMovieCard(data: TrendingMoviesData) {
   return (
     <div className=" flex flex-col gap-8 items-center relative">
       <Image
         src={data.imagePath}
         alt="movie-poster"
-        height={100}
-        width={100}
+        height={4024}
+        width={6048}
         className=" w-[14rem] h-[18rem] object-cover"
       />
       <p className=" text-20 text-white-primary">{data.title}</p>

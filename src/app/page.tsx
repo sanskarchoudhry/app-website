@@ -1,16 +1,44 @@
 // import Link from "next/link";
 import Image from "next/image";
 import TrendingCard from "../../components/TrendingCard";
-import { postsData, website_info_data } from "../../public/json_data";
+import {
+  menuItems,
+  MenuItems,
+  postsData,
+  website_info_data,
+} from "../../public/json_data";
 import Footer from "../../components/Footer";
 import MovieSlider from "../../components/MovieSlider";
-import Navbar from "../../components/Navbar";
+// import Navbar from "../../components/Navbar";
+import Link from "next/link";
 // import SearchBox from "../../public/components/SearchBox";
 
 export default function Page() {
   return (
     <main className="flex flex-col overflow-x-hidden items-center justify-center">
-      <Navbar />
+      <nav className=" flex backdrop-blur-sm w-full justify-between items-center fixed top-0 z-50 py-4 px-20">
+        <div>
+          <h1 className=" text-32 font-archivoBlack-regular">RECOMMENDER</h1>
+        </div>
+        <ul className=" flex gap-24">
+          {menuItems.map((menuItem: MenuItems, index: number) => {
+            return (
+              <li
+                key={index}
+                className="hover:scale-110 active:scale-100 transition-transform"
+              >
+                <Link
+                  href={menuItem.menuLink}
+                  className="text-20 font-satoshi-bold "
+                >
+                  {menuItem.menuTitle}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+        <button className=" rounded-[10px] text-20 ">Sign in</button>
+      </nav>
       <section className="relative flex h-screen w-screen">
         <Image
           height={911}

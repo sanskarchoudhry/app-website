@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { postsData } from "../public/json_data";
+import { PostsData } from "../public/json_data";
 
-export default function TrendingCard(postData: postsData) {
+export default function TrendingCard(postData: PostsData) {
   return (
     <div className=" bg-grey-secondary bg-opacity-10 rounded-md p-4 gap-8 flex flex-col cursor-pointer">
       <div className="flex justify-between">
